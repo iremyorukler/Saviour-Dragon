@@ -10,13 +10,15 @@ public class PipeSpawner : MonoBehaviour
     public int totalPipes = 10;   
     private int pipesSpawned = 0; 
     private float timer = 0;
-    public bool isLevelFinished = false; 
+    public bool isLevelFinished = false;
 
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         SpawnPipe();
     }
 
+    // Update is called once per frame
     void Update()
     {
         if (isLevelFinished == true)
